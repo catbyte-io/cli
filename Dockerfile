@@ -102,7 +102,7 @@ RUN apt update && \
 RUN echo "gem: --no-document" > /etc/gemrc && \
     gem install \
         jekyll \
-        minitest '# So that Bundler neednt install' \
+        minitest '# So that Bundler need not install' \
         pygments.rb \
         specific_install && \
     gem specific_install https://github.com/cs50/jekyll-theme-cs50 develop && \
@@ -127,7 +127,7 @@ RUN cd /tmp && \
 
 # Final stage
 FROM ubuntu:24.04
-LABEL maintainer="sysadmins@cs50.harvard.edu"
+LABEL maintainer="development@alienkitty.dev"
 ARG DEBIAN_FRONTEND=noninteractive
 
 
