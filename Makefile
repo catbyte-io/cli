@@ -1,4 +1,4 @@
-IMAGE := cs50/cli
+IMAGE := catbyte/cli
 
 .PHONY: default
 default: run
