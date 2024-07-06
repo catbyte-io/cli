@@ -102,7 +102,7 @@ RUN apt update && \
 RUN echo "gem: --no-document" > /etc/gemrc && \
     gem install \
         jekyll \
-        minitest `# So that Bundler needn't install` \
+        minitest '# So that Bundler neednt install' \
         pygments.rb \
         specific_install && \
     gem specific_install https://github.com/cs50/jekyll-theme-cs50 develop && \
